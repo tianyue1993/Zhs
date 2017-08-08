@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_device_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhs.zhs.activity.ResetDeviceNameActivity">
+
+
+    <EditText
+        android:id="@+id/feedback_contact_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback_tv"
+        android:layout_marginLeft="@dimen/marginmiddle"
+        android:layout_marginRight="@dimen/marginmiddle"
+        android:layout_marginTop="@dimen/marginmiddle"
+        android:background="@drawable/bg_feedback"
+        android:hint="请输入设备名称"
+        android:minHeight="45dp"
+        android:paddingLeft="@dimen/marginsmall"
+        android:paddingRight="@dimen/marginsmall"
+        android:singleLine="true"
+        android:textColor="#5a5a5a"
+        android:textColorHint="@color/base_color"
+        android:textCursorDrawable="@drawable/cursor_drawable" />
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:background="@drawable/bg_base"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="province">
+        <item>72芯</item>
+        <item>96芯 </item>
+        <item>144芯</item>
+        <item>216芯</item>
+        <item>288芯</item>
+        <item>432芯</item>
+        <item>567芯</item>
+        <item>720芯</item>
+        <item>864芯</item>
+        <item>1152芯</item>
+    </string-array>
+
+</resources>

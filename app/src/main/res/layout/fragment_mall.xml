@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/base_color" />
+
+    <RelativeLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/base_color">
+
+        <ImageView
+            android:id="@+id/my_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:src="@mipmap/ic_mymall" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/status_bar"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:weightSum="1">
+
+            <!--<TextView-->
+                <!--android:id="@+id/ad_show"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:text="商城商品广告轮播"-->
+                <!--android:background="@color/base_color"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:gravity="center"/>-->
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_ad"
+                android:layout_width="match_parent"
+                android:background="@color/base_color"
+                android:layout_height="200dp" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_margin="0dp"
+                android:divider="@color/base_bg"
+                android:dividerHeight="1dp"
+                android:scrollbars="none"></ListView>
+
+        </LinearLayout>
+
+
+   </ScrollView>
+
+    <!--<com.zhs.zhs.views.DownPullRefreshListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+</RelativeLayout>

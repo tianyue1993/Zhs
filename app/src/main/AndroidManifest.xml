@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhs.zhs">
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".ZhsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- 服务器根地址域名 -->
+        <meta-data
+            android:name="serverDoMain"
+            android:value="${serverDoMain}" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="545508bc258eb7fc98a00a1b0494ca3a" />
+        <meta-data
+            android:name="5a81eb251a"
+            android:value="3296b9ff-7349-48a0-8208-847a54d5d5b9" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/Theme.AppStartLoad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity android:name=".activity.MyadressActivity" />
+        <activity android:name=".activity.MyFamilyActivity" />
+        <activity android:name=".activity.AboutusActivity" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.QuestionActivity" />
+        <activity android:name=".zxing.activity.CaptureActivity" />
+        <activity android:name=".activity.PayActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppStartLoad" />
+        <activity android:name=".activity.ForgetPswdActivity" />
+        <activity android:name=".activity.AddFamify" />
+        <activity android:name=".activity.ResetPswdActivity" />
+        <activity android:name=".activity.ResetPhoneActivity" />
+        <activity android:name=".activity.NewsWarningActivity" />
+        <activity android:name=".activity.MyMallActivity" />
+        <activity android:name=".activity.RenameActivity" />
+        <activity android:name=".activity.AddSceneActivity" />
+        <activity android:name=".activity.MoreSceneActivity" />
+        <activity android:name=".activity.SettingSceneActivity" />
+        <activity
+            android:name=".activity.SelectPicPopupWindowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.SelectRemindTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectPaddenWindowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.OfflineActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".activity.AddNewPswdActivity" />
+        <activity android:name=".activity.AddDeviceActivity" />
+        <activity android:name=".activity.ShoppingCartActivity" />
+        <activity android:name=".activity.ProductDetailActivity" />
+        <activity android:name=".activity.SceneDeviceActivity" />
+        <activity android:name=".activity.device.CurtainActivity" />
+        <activity android:name=".activity.NewsDetailActivity" />
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.WarnNewsListActivity" />
+        <activity android:name=".activity.WarnNewsDetailActivity" />
+        <activity android:name=".activity.ResetDeviceNameActivity" />
+        <activity android:name=".activity.device.ElectricMonitorActivity" />
+        <activity android:name=".activity.device.ConcentratorActivity" />
+        <activity android:name=".activity.device.SmartSwitchActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.device.WaterInductionActivity" />
+        <activity android:name=".activity.PersonnalSettingActivity" />
+        <activity android:name=".activity.PersonNewsSetActivity" />
+        <activity android:name=".activity.SecondRemindTypeActivity" />
+
+
+        <activity android:name=".activity.AddUserFamify" />
+        <activity android:name=".activity.device.CombustibleGasActivity" />
+
+        <receiver
+            android:name=".mpush.MPushReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.mpush.HEALTH_CHECK" />
+                <action android:name="com.mpush.NOTIFY_CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".mpush.MPushService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".mpush.MPushFakeService" />
+        <service android:name=".mpush.MPushFakeService" />
+
+        <receiver
+            android:name=".mpush.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mpush.MESSAGE_RECEIVED" /> <!-- 收到PUSH消息 -->
+                <action android:name="com.mpush.KICK_USER" /> <!-- 收到踢人消息 -->
+                <action android:name="com.mpush.CONNECTIVITY_CHANGE" /> <!-- 收到链接变化 -->
+                <action android:name="com.mpush.HANDSHAKE_OK" /> <!-- 收到握手成功消息 -->
+                <action android:name="com.mpush.BIND_USER" /> <!-- 收到绑定用户消息 -->
+                <action android:name="com.mpush.UNBIND_USER" /> <!-- 收到解绑用户消息 -->
+                <category android:name="com.zhsaq.family" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".devicempush.MPushReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.mpush.HEALTH_CHECK" />
+                <action android:name="com.mpush.NOTIFY_CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".devicempush.MPushDeviceService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".devicempush.MPushFakeService" />
+        <service android:name=".devicempush.MPushFakeService" />
+
+        <activity android:name=".activity.device.GasActivity" />
+        <activity android:name=".activity.SetSleepTimeActivity" />
+        <activity android:name=".activity.FamilyManageActivity" />
+        <activity android:name=".activity.device.DoorAlarmActivity" />
+        <activity android:name=".activity.device.GlassShockActivity"></activity>
+        <activity android:name=".activity.device.SmartPlugActivity"></activity>
+    </application>
+
+</manifest>

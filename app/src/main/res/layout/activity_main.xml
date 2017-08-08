@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/mian_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/main_bottom_menu_rg"
+        android:layout_marginBottom="8dp"
+        android:background="@color/base_bg" />
+
+    <RadioGroup
+        android:id="@+id/main_bottom_menu_rg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/main_bottom_rb_recomend"
+            style="@style/main_bottom_radiobutton_style"
+            android:button="@null"
+            android:drawableTop="@drawable/bar_bottom_family_selector" />
+
+
+        <CheckBox
+            android:id="@+id/main_bottom_rb_game"
+            style="@style/main_bottom_radiobutton_style"
+            android:button="@null"
+            android:drawableTop="@drawable/bar_bottom_news_selector" />
+
+        <CheckBox
+            android:id="@+id/main_bottom_rb_bbs"
+            style="@style/main_bottom_radiobutton_style"
+            android:button="@null"
+            android:drawableTop="@drawable/bar_bottom_device_selector" />
+
+
+        <CheckBox
+            android:id="@+id/main_bottom_rb_mall"
+            style="@style/main_bottom_radiobutton_style"
+            android:button="@null"
+            android:drawableTop="@drawable/bar_bottom_mall_selector" />
+
+        <CheckBox
+            android:id="@+id/main_bottom_rb_circle"
+            style="@style/main_bottom_radiobutton_style"
+            android:button="@null"
+            android:drawableTop="@drawable/bar_bottom_mine_selector" />
+    </RadioGroup>
+</RelativeLayout>

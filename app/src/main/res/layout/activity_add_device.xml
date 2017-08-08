@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhs.zhs.activity.AddDeviceActivity">
+
+    <GridView
+        android:id="@+id/device_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"></GridView>
+
+</RelativeLayout>

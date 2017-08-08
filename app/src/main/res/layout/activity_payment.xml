@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhs.zhs.activity.PaymentActivity">
+
+    <TextView
+        android:id="@+id/tv_usr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="用户姓名"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_usr_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/tv_usr_name"
+        android:text="13888888888"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tv_product_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_usr_tel"
+        android:text="商品详情: xxxxxxxxxxxxxxxxxxxxxx"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_above="@+id/alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <CheckBox
+            android:id="@+id/cb_wechat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:background="@drawable/checkbox"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cb_wechat"
+            android:layout_marginLeft="50dp"
+            android:text="微信支付"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_pay">
+        <CheckBox
+            android:id="@+id/cb_alipay"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:background="@drawable/checkbox"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cb_alipay"
+            android:layout_marginLeft="50dp"
+            android:text="支付宝支付"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_pay"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="14dp"
+        android:text="共计：1000元 " />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:text="支付" />
+</RelativeLayout>

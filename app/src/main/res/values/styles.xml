@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/base_color</item>
+
+        <item name="colorPrimaryDark">@color/base_color</item>
+
+        <item name="colorAccent">@color/white</item>
+
+    </style>
+
+
+    -
+
+    <style name="m_dialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowIsTranslucent">false</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:backgroundDimEnabled">false</item>
+
+    </style>
+
+
+    -
+
+    <style name="main_bottom_radiobutton_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.AppStartLoad" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <!-- common dialog style -->
+    <style name="commonDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">  
+         
+        <item name="android:maxHeight">8.0dip</item>
+         <item name="android:indeterminateOnly">false</item>  
+         <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>  
+         <item name="android:thumb">@drawable/seekbar_thumb</item>  
+        <item name="android:thumbOffset">10.0dip</item>
+    </style>
+
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">  
+        <!-- 这里设置背景为透明，为了隐藏边框 -->  
+                <item name="android:windowBackground">@color/base_bg</item>  
+                <item name="android:windowNoTitle">true</item>  
+        <!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->  
+                <item name="android:topDark">@color/base_bg</item>  
+         <!-- 这里是修改内容区域背景颜色 -->  
+            <item name="android:centerDark">@color/base_bg</item>  
+                <item name="android:windowIsTranslucent">true</item>  
+                <item name="android:windowAnimationStyle">
+            @color/base_color</item>  
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        //设置为true，背景就是灰色的了，反正你一看就知道是设置什么的
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+      
+</resources>
